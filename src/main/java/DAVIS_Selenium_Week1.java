@@ -1,5 +1,8 @@
 /**
- * 
+ * Project Name: DAVID_DAVIS_SELENIUM_202503
+ * File Name: DAVIS_Selenium_Week1.java
+ * Author: David Davis
+ * Date: March 14, 2025
  */
 
 /**
