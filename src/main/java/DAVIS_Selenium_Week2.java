@@ -19,8 +19,8 @@ import DAVIS_Selenium_Week2_Scanner.*;
 public class DAVIS_Selenium_Week2 {
 	public static void main(String[] args) throws IOException {
  
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		DAVIS_Selenium_IWeek2_Buffer week2Buffer = new DAVIS_Selenium_Week2_Buffer();
+		//BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		//DAVIS_Selenium_IWeek2_Buffer week2Buffer = new DAVIS_Selenium_Week2_Buffer();
 		
 		Scanner sc = new Scanner(System.in);
 		DAVIS_Selenium_IWeek2_Scanner week2Scanner = new DAVIS_Selenium_Week2_Scanner();
@@ -50,6 +50,6 @@ public class DAVIS_Selenium_Week2 {
 	     */
 		//week2Buffer.MulitplicationOfThreeNumbers(reader);
 		week2Scanner.MulitplicationOfThreeNumbers(sc);
-
+		sc.close();
 	}
 }
