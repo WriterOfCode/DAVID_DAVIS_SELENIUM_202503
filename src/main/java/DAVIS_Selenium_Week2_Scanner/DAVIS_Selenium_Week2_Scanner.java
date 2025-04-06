@@ -3,7 +3,6 @@
  */
 package DAVIS_Selenium_Week2_Scanner;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -147,16 +146,26 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
     	    currentPromptCt++;
         } 
         long product = 0;
-        product  = multiplyListValues(userInputNumbers);       
+        product  = multiplyListValues(userInputNumbers);  
         
-        String summary = ""; 
+        StringBuilder summary = new StringBuilder();
+     
         for (int num : userInputNumbers) {
-        	if (summary.length()==0 ) { summary = String.valueOf(num);}
-        	else {  summary = summary +   " * " + String.valueOf(num);}
+        	if (summary.length()==0 ) { 
+        		summary.append("The product of ");
+        		summary.append(num) ;
+        		}
+        	else {  
+        		summary.append(" * ");
+        		summary.append(num) ;
+        		}
         }
         
-        summary = "The product of " + summary + " is "  +  String.valueOf(product);
-	    System.out.println(summary);
+        summary.append( " is " ) ;
+        summary.append(product);
+        System.out.println(summary);
+        
+        
 	}
 	
     public static int multiplyListValues(List<Integer> list) {

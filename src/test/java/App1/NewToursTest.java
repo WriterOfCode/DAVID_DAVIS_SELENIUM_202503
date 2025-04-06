@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import Core.BaseTest;
+import Base.BaseTest;
 import Pages.NewToursPage;
 import Utils.ElementUtils;
 
@@ -31,4 +31,3 @@ public class NewToursTest extends BaseTest {
                 "Title does not contain expected text.");
     }
 }
-
