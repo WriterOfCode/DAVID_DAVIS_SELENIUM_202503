@@ -3,7 +3,6 @@
  */
 package DAVIS_Selenium_Week2_Scanner;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -20,7 +19,7 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 	public void Hello(Scanner reader) {
 	    System.out.println("-----------------------------------------------------");
 		System.out.println("1 Write a Java program to print Hello and your name.");
-		System.out.println();
+	    System.out.println("-----------------------------------------------------");
 		System.out.print("Please enter your name : ");
         // String input
         String username = reader.nextLine();
@@ -34,11 +33,11 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 	public void IsEqualTo(Scanner reader) {
 	    System.out.println("-----------------------------------------------------");
 	    System.out.println("2 Write an if condition where \"a\" is equal to 1.");
-	    
+	    System.out.println("-----------------------------------------------------");
 		int a = 0;
 		int number;
 		do {
-		    System.out.println("Please enter a positive number!");
+		    System.out.print("Please enter a positive number!");
 		    while (!reader.hasNextInt()) {
 		        System.out.println("Not a number, try again.");
 		        reader.next(); // this is important!
@@ -57,7 +56,7 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 	public void SumOfTwoNumbers(Scanner reader) {
 	    System.out.println("---------------------------------------------------------");
 	    System.out.println("3. Write a java program to print the sum of two numbers. ");
-	    System.out.println();
+	    System.out.println("---------------------------------------------------------");
 	    System.out.print("Please enter a integer to add with next integer prompt: ");
 	    
 		int firstInteger;
@@ -68,9 +67,7 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 		        reader.next(); 
 		    }
 		    firstInteger = reader.nextInt();
-		} while (firstInteger <= 0);
-		System.out.println("Thank you! Got " + firstInteger);
-		
+		} while (firstInteger < 0);		
 		int secondInteger;
 		do {
 		    System.out.println("Please enter a positive number!");
@@ -79,12 +76,9 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 		        reader.next(); 
 		    }
 		    secondInteger = reader.nextInt();
-		} while (secondInteger <= 0);
-		System.out.println("Thank you! Got " + secondInteger);
-		
+		} while (secondInteger < 0);
 	    System.out.println();
 	    System.out.print("The sum of " + firstInteger + " and " +  secondInteger + " is " + Long.toString(SumTwoNumbers(firstInteger,secondInteger)));
-	    System.out.println();
 	    System.out.println();
 	}
 	/**
@@ -93,9 +87,9 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 	 */
 	@Override
 	public void HelloWorld(Scanner reader) {
-	    System.out.println("---------------------------------------------------------");
+	    System.out.println("-----------------------------------------------------------------");
 	    System.out.println("4. How can you store \"Hello World\" value in a String variable.");
-	    System.out.println();
+	    System.out.println("-----------------------------------------------------------------");
 	    System.out.println("Declare a variable as a string and then assign the variable the value \"Hello World\"");
 	    String hellowWorld = "Hello World";
 	    System.out.println(hellowWorld);
@@ -106,9 +100,10 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
 	*/
 	@Override
 	public void MulitplicationOfThreeNumbers(Scanner reader) {
-	    System.out.println("---------------------------------------------------------");
-	    System.out.println("5. Write a Java program to print the output of multiplication of three numbers which will be entered by the user.");
-	    System.out.println();
+	    System.out.println("-----------------------------------------------------------------");
+	    System.out.println("5. Write a Java program to print the output of multiplication ");
+	    System.out.println("    three numbers which will be entered by the user.");
+	    System.out.println("-----------------------------------------------------------------");
 	    
 	    
 	    List<String> multipliersPrompts = new ArrayList<>(); 
@@ -116,13 +111,24 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
         multipliersPrompts.add("Please enter second of 3 integers to multiply with the prior integer entered:"); 
         multipliersPrompts.add("Please enter third of 3 integers to multiply with the prior integers entered:"); 
         
-        multipliersPrompts.add("Please enter first of 3 integers to multiply with the next integer prompt:");        
-        multipliersPrompts.add("Please enter second of 3 integers to multiply with the prior integer entered:"); 
-        multipliersPrompts.add("Please enter third of 3 integers to multiply with the prior integers entered:"); 
+		/*
+		 * multipliersPrompts.
+		 * add("Please enter first of 3 integers to multiply with the next integer prompt:"
+		 * ); multipliersPrompts.
+		 * add("Please enter second of 3 integers to multiply with the prior integer entered:"
+		 * ); multipliersPrompts.
+		 * add("Please enter third of 3 integers to multiply with the prior integers entered:"
+		 * );
+		 * 
+		 * multipliersPrompts.
+		 * add("Please enter first of 3 integers to multiply with the next integer prompt:"
+		 * ); multipliersPrompts.
+		 * add("Please enter second of 3 integers to multiply with the prior integer entered:"
+		 * ); multipliersPrompts.
+		 * add("Please enter third of 3 integers to multiply with the prior integers entered:"
+		 * );
+		 */
         
-        multipliersPrompts.add("Please enter first of 3 integers to multiply with the next integer prompt:");        
-        multipliersPrompts.add("Please enter second of 3 integers to multiply with the prior integer entered:"); 
-        multipliersPrompts.add("Please enter third of 3 integers to multiply with the prior integers entered:"); 
         List<Integer> userInputNumbers = new ArrayList<>(); 
         
         Iterator<String> i = multipliersPrompts.iterator(); 
@@ -140,16 +146,26 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
     	    currentPromptCt++;
         } 
         long product = 0;
-        product  = multiplyListValues(userInputNumbers);       
+        product  = multiplyListValues(userInputNumbers);  
         
-        String summary = ""; 
+        StringBuilder summary = new StringBuilder();
+     
         for (int num : userInputNumbers) {
-        	if (summary.length()==0 ) { summary = String.valueOf(num);}
-        	else {  summary = summary +   " * " + String.valueOf(num);}
+        	if (summary.length()==0 ) { 
+        		summary.append("The product of ");
+        		summary.append(num) ;
+        		}
+        	else {  
+        		summary.append(" * ");
+        		summary.append(num) ;
+        		}
         }
         
-        summary = "The product of " + summary + " is "  +  String.valueOf(product);
-	    System.out.println(summary);
+        summary.append( " is " ) ;
+        summary.append(product);
+        System.out.println(summary);
+        
+        
 	}
 	
     public static int multiplyListValues(List<Integer> list) {
