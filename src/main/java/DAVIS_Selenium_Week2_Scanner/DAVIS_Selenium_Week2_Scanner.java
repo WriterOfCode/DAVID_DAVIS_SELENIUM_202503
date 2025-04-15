@@ -2,7 +2,6 @@
  * 
  */
 package DAVIS_Selenium_Week2_Scanner;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -134,7 +133,6 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
         Iterator<String> i = multipliersPrompts.iterator(); 
         while (i.hasNext()) { 
         	System.out.println(i.next());
-        	int currentPromptCt = 0;
     		int nextInteger = 0;
     		    while (!reader.hasNextInt()) {
     		        System.out.println("Not a number, try again.");
@@ -143,7 +141,6 @@ public class DAVIS_Selenium_Week2_Scanner implements DAVIS_Selenium_IWeek2_Scann
     		    }
     		    nextInteger = reader.nextInt();
     	    userInputNumbers.add(nextInteger);
-    	    currentPromptCt++;
         } 
         long product = 0;
         product  = multiplyListValues(userInputNumbers);  

@@ -19,7 +19,7 @@ public class BaseTest {
     @AfterEach
     public void tearDown() {
         if (driverFactory != null) {
-            //driverFactory.quitDriver();
+            driverFactory.quitDriver();
         }
     }
 }
