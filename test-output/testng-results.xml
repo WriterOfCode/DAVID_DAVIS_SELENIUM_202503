@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-21T01:42:20 EDT" name="Default suite" finished-at="2025-04-21T01:43:12 EDT" duration-ms="51618">
+    <groups>
+    </groups>
+    <test started-at="2025-04-21T01:42:20 EDT" name="Default test" finished-at="2025-04-21T01:43:12 EDT" duration-ms="51618">
+      <class name="DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:20 EDT" name="beforeSuite" finished-at="2025-04-21T01:42:20 EDT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:20 EDT" name="setUp" finished-at="2025-04-21T01:42:22 EDT" duration-ms="1826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:22 EDT" name="beforeClass" finished-at="2025-04-21T01:42:22 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:22 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:22 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:22 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:42:29 EDT" duration-ms="6598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@6d0b5baf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:29 EDT" name="afterMethod" finished-at="2025-04-21T01:42:29 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:29 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:42:35 EDT" duration-ms="5876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@3f2049b6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:29 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:29 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:35 EDT" name="afterMethod" finished-at="2025-04-21T01:42:35 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:35 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:42:40 EDT" duration-ms="5577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@79b663b3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:35 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:35 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:40 EDT" name="afterMethod" finished-at="2025-04-21T01:42:40 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:40 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:42:46 EDT" duration-ms="5783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@2b0b4d53]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:40 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:40 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:46 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:46 EDT" name="afterMethod" finished-at="2025-04-21T01:42:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:46 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:42:52 EDT" duration-ms="5845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@7bbbb6a8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:52 EDT" name="afterMethod" finished-at="2025-04-21T01:42:52 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:52 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:43:00 EDT" duration-ms="7746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@30a7c98f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:42:52 EDT" name="beforeMethod" finished-at="2025-04-21T01:42:52 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:00 EDT" name="beforeMethod" finished-at="2025-04-21T01:43:00 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:00 EDT" name="afterMethod" finished-at="2025-04-21T01:43:00 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:00 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:43:06 EDT" duration-ms="6439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@161f6623]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method signature="validateRegisterPage(Core.UserDto)[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:06 EDT" name="validateRegisterPage" description="Validate Register Page" data-provider="UsersFromJsonFile" finished-at="2025-04-21T01:43:12 EDT" duration-ms="5529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Core.UserDto@51c959a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterPage -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:06 EDT" name="beforeMethod" finished-at="2025-04-21T01:43:06 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:06 EDT" name="afterMethod" finished-at="2025-04-21T01:43:06 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:12 EDT" name="afterMethod" finished-at="2025-04-21T01:43:12 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:12 EDT" name="afterClass" finished-at="2025-04-21T01:43:12 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:12 EDT" name="tearDown" finished-at="2025-04-21T01:43:12 EDT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App@185a6e9]" started-at="2025-04-21T01:43:12 EDT" name="afterSuite" finished-at="2025-04-21T01:43:12 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

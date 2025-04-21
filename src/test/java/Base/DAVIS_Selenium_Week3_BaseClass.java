@@ -1,3 +1,9 @@
+/**
+ * Project Name: DAVID_DAVIS_SELENIUM_202503
+ * File Name: DAVIS_Selenium_Week3_BaseClass.java
+ * Author: David Davis
+ * Date: March 25, 2025
+ */
 package Base;
 
 import org.junit.jupiter.api.AfterEach;

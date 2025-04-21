@@ -1,8 +1,16 @@
-package Base;
+/**
+ * Project Name: DAVID_DAVIS_SELENIUM_202503
+ * File Name: DAVIS_BaseTest.java
+ * Author: David Davis
+ * Date: April  14, 2025
+ * Updated April 16, 2025
+ */
+
+package Base; 
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,15 +25,14 @@ import org.openqa.selenium.support.ui.FluentWait;
 import Core.DAVIS_DriverFactory;
 import Utils.ConfigReader;
 
-public class DAVIS_BaseTest {
+public class DAVIS_BaseTestJunit {
     
     protected WebDriver webdriver;
     private DAVIS_DriverFactory driverFactory;
     private String screenshotPath; // Path to save screenshots
 
-    public DAVIS_BaseTest() {
+    public DAVIS_BaseTestJunit() {
         this.screenshotPath = ConfigReader.getProperty("screenshotPath"); // Path to save screenshots
-        this.driverFactory = new DAVIS_DriverFactory(); // Initialize the driver factory
     }
  
     @BeforeEach// This annotation is used to indicate that the method should be executed before each test method in the current class.
@@ -56,7 +63,7 @@ public class DAVIS_BaseTest {
      * @param TestName
      * @return
      */
-    public Void TakeSchreenshot(String TestName) { 
+    public Void takeSchreenshot(String TestName) { 
         String filePath = getScreenshotPathAndFile(TestName);
         try {
             TakeSnapShot(filePath); // Call the method to take a screenshot
@@ -81,7 +88,7 @@ public class DAVIS_BaseTest {
     */
     private void TakeSnapShot(String fileWithPath) throws Exception{
         //Convert web driver object to TakeScreenshot 
-        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+        TakesScreenshot scrShot =((TakesScreenshot)this.webdriver);
         //Call getScreenshotAs method to create image file
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         //Move image file to new destination
@@ -90,19 +97,23 @@ public class DAVIS_BaseTest {
         FileUtils.copyFile(SrcFile, DestFile);
     }
     /**
-     * This function will wait for the element to be visible
+     * This FluentWait function will wait for the element to be visible
      * @param locator
      */
     public void waitForElementToBeVisible(By locator) {
-        FluentWait<WebDriver> wait = new FluentWait<>(webdriver)
+        FluentWait<WebDriver> wait = new FluentWait<>(this.webdriver)
                 .withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(NoSuchElementException.class);
         
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-    public void waitForElementToBeClickable(By locator) {
-        FluentWait<WebDriver> wait = new FluentWait<>(webdriver)
+    /**
+     * This FluentWait function will wait for the element to be clickable
+     * @param locator
+     */
+    public void waitForElementToBeClickable( By locator) {
+        FluentWait<WebDriver> wait = new FluentWait<>(this.webdriver)
                 .withTimeout(Duration.ofSeconds(10))
                 .pollingEvery(Duration.ofMillis(500))
                 .ignoring(NoSuchElementException.class);

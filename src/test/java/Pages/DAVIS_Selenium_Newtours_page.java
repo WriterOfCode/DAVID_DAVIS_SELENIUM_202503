@@ -9,12 +9,12 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory; 
+import org.openqa.selenium.support.PageFactory;
 
-public class DAVIS_Selenium_Week5_page  {
-     protected  WebDriver driver;
+public class DAVIS_Selenium_Newtours_page {
+    protected  WebDriver driver;
 
-    public DAVIS_Selenium_Week5_page(WebDriver driver) {
+    public DAVIS_Selenium_Newtours_page(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -40,17 +40,15 @@ public class DAVIS_Selenium_Week5_page  {
     	usernameInput.sendKeys(username);
     	passwordInput.sendKeys(password);
     }
-
     public String getTitle() {
         return driver.getTitle();  
     }
     public void clickOnSubmitButton() {
         submitButton.click();
-    }
+    }       
     public void clickOnRegisterLink(){
         registerLink.click();
     }
-    
     public void navagateToHomePage() {
         driver.get("https://demo.guru99.com/test/newtours/");
     }
@@ -60,11 +58,9 @@ public class DAVIS_Selenium_Week5_page  {
     public void navigateToRegisterPage() {
         driver.get("https://demo.guru99.com/test/newtours/register.php");
     }
-    public void navigateforwardandbackPage() {
+    public void naigateforwardandbackPage() {
         driver.navigate().back();
         driver.navigate().forward();
         driver.navigate().refresh();
-        
     }
 }
-

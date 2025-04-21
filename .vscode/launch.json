@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "DAVIS_Selenium_Week1",
+            "request": "launch",
+            "mainClass": "DAVIS_Selenium_Week1",
+            "projectName": "DAVID_DAVIS_SELENIUM_202503"
+        },
+        {
+            "type": "java",
+            "name": "DAVIS_Selenium_Week2",
+            "request": "launch",
+            "mainClass": "DAVIS_Selenium_Week2",
+            "projectName": "DAVID_DAVIS_SELENIUM_202503"
+        },
+        {
+            "type": "java",
+            "name": "DAVIS_Selenium_Week21",
+            "request": "launch",
+            "mainClass": "org.testing.TestNG",
+            "args": "-d \"/tmp/testing-output/d4afd19e\" /path/to/MySuite.xml",
+            "vmArgs": "-cp /jar/file/path/a.jar:/jar/file/path/b.jar:/jar/file/path/testing-7.5.jar",
+            "projectName": "DAVID_DAVIS_SELENIUM_202503"
+        }
+    ]
+}

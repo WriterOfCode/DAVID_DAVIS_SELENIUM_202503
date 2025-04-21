@@ -1,4 +1,4 @@
-package Pages;
+package Pages; 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,8 +43,7 @@ public class DAVIS_Selenium_Week4_page {
     public void clickOnSubmitButton() {
         submitButton.click();
     }       
-     
-
+    
     public void navigateToLoginPage() {
         driver.get("https://demo.guru99.com/test/newtours/login.php");
     }

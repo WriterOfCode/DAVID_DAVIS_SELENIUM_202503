@@ -35,7 +35,7 @@ public class DAVIS_DriverFactory {
             case "chrome":
 	  			return initializeChromeDriver();
             case "firefox":
-            	throw new java.lang.UnsupportedOperationException("Firefox not supported yet.");
+            	throw new Core.BrowserNotSupportedException("Firefox not supported yet.");
             case "edge":
             	throw new java.lang.UnsupportedOperationException("Edge not supported yet.");
             default:
