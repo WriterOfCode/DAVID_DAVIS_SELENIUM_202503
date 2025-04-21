@@ -3,7 +3,6 @@ package Base;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
-
 import Core.DriverFactory;
 
 public class BaseTest {
@@ -11,15 +10,15 @@ public class BaseTest {
     private DriverFactory driverFactory;
     
     @BeforeEach
-    public void setUp() {
+    protected void setUp() {
         driverFactory = new DriverFactory();
         driver = driverFactory.initializeDriver();
     }
 
     @AfterEach
-    public void tearDown() {
+    protected void tearDown() {
         if (driverFactory != null) {
-            //driverFactory.quitDriver();
+            driverFactory.quitDriver();
         }
     }
 }
