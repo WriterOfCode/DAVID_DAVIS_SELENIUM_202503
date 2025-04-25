@@ -27,7 +27,7 @@ public class DAVIS_Selenium_Week5_Test_app extends DAVIS_BaseTestJunit {
     @Order(2)
     @DisplayName("Validate New Tours Login")
     public void validateNewToursHomeAndLogin() { 
-        DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
+    	DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
 
         // Open homepage
         page4.open();

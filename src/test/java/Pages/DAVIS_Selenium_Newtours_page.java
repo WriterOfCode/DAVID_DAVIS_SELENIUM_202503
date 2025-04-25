@@ -19,7 +19,6 @@ public class DAVIS_Selenium_Newtours_page {
         PageFactory.initElements(driver, this);
     }
 
-
     @FindBy(xpath = "//input[@type='text' and @name='userName']")
     private WebElement usernameInput;
     
@@ -40,24 +39,31 @@ public class DAVIS_Selenium_Newtours_page {
     	usernameInput.sendKeys(username);
     	passwordInput.sendKeys(password);
     }
+    
     public String getTitle() {
         return driver.getTitle();  
     }
+    
     public void clickOnSubmitButton() {
         submitButton.click();
-    }       
+    }  
+    
     public void clickOnRegisterLink(){
         registerLink.click();
     }
+    
     public void navagateToHomePage() {
         driver.get("https://demo.guru99.com/test/newtours/");
     }
+    
     public void navigateToLoginPage() {
         driver.get("https://demo.guru99.com/test/newtours/login.php");
     }
+    
     public void navigateToRegisterPage() {
         driver.get("https://demo.guru99.com/test/newtours/register.php");
     }
+    
     public void naigateforwardandbackPage() {
         driver.navigate().back();
         driver.navigate().forward();
