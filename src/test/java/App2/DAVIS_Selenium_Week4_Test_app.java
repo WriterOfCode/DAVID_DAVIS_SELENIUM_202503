@@ -11,15 +11,14 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import Base.DAVIS_BaseTestJunit;
-import Pages.DAVIS_Selenium_Newtours_page;
-import Pages.DAVIS_Selenium_Week4_page;
+import Pages.NewToursTestNgPage;
 import Utils.ElementUtils;
 
 public class DAVIS_Selenium_Week4_Test_app extends DAVIS_BaseTestJunit {
     @Test
     public void validateToursLogin() {
         // Create an instance of the GoogleHomePage
-    	DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
+    	NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);
         // Open homepage
         page4.open();
         Assertions.assertTrue(page4.getTitle().contains("Welcome: Mercury Tours"),

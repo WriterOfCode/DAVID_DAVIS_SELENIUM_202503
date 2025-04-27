@@ -17,7 +17,7 @@ import Core.UserDto;
 import Utils.ElementUtils;
 import Base.DAVIS_BaseTestJunit;
 import Pages.NewtoursLoginPage;
-import Pages.DAVIS_Selenium_Newtours_page;
+import Pages.NewToursTestNgPage;
 import Pages.RegisterSucessPage;
 import Pages.RegisterPage;
  
@@ -27,7 +27,7 @@ public class DAVIS_Selenium_Week5_Test_app extends DAVIS_BaseTestJunit {
     @Order(2)
     @DisplayName("Validate New Tours Login")
     public void validateNewToursHomeAndLogin() { 
-    	DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
+    	NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);
 
         // Open homepage
         page4.open();

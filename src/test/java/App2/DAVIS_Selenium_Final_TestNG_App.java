@@ -15,7 +15,7 @@ import org.testng.annotations.*;
 import Base.DAVIS_BaseTestNG;
 import Core.UserDto;
 import Pages.NewtoursLoginPage;
-import Pages.DAVIS_Selenium_Newtours_page;
+import Pages.NewToursTestNgPage;
 import Pages.RegisterSucessPage;
 import Pages.RegisterPage;
 import Utils.ElementUtils;
@@ -25,7 +25,7 @@ import Utils.ElementUtils;
 public class DAVIS_Selenium_Final_TestNG_App extends DAVIS_BaseTestNG {
     @Test(description ="Validate New Tours Page")
     public void validateNewToursHomeAndLogin() { 
-        DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
+        NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);
 
         // Open homepage
         page4.open(); 

@@ -4,21 +4,21 @@
  * Author: David Davis
  * Date: Apral  14, 2025
  */
-package Pages; 
+package Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory; 
+import org.openqa.selenium.support.PageFactory;
 
-public class DAVIS_Selenium_Week4_page {
+public class NewToursTestNgPage {
     protected  WebDriver driver;
 
-    public DAVIS_Selenium_Week4_page(WebDriver driver) {
+    public NewToursTestNgPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    
+
     @FindBy(xpath = "//input[@type='text' and @name='userName']")
     private WebElement usernameInput;
     
@@ -30,7 +30,7 @@ public class DAVIS_Selenium_Week4_page {
 
     @FindBy(xpath = "//a[@href='register.php' and  text()='REGISTER']")
     private WebElement registerLink;
-    
+
     public void open() {
         driver.get("https://demo.guru99.com/test/newtours/");
     }
@@ -39,23 +39,23 @@ public class DAVIS_Selenium_Week4_page {
     	usernameInput.sendKeys(username);
     	passwordInput.sendKeys(password);
     }
-
+    
     public String getTitle() {
         return driver.getTitle();  
     }
     
     public void clickOnSubmitButton() {
         submitButton.click();
-    }
+    }  
     
     public void clickOnRegisterLink(){
         registerLink.click();
     }
-
+    
     public void navagateToHomePage() {
         driver.get("https://demo.guru99.com/test/newtours/");
     }
-
+    
     public void navigateToLoginPage() {
         driver.get("https://demo.guru99.com/test/newtours/login.php");
     }
@@ -64,7 +64,7 @@ public class DAVIS_Selenium_Week4_page {
         driver.get("https://demo.guru99.com/test/newtours/register.php");
     }
     
-    public void navigateforwardandbackPage() {
+    public void naigateforwardandbackPage() {
         driver.navigate().back();
         driver.navigate().forward();
         driver.navigate().refresh();
