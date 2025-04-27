@@ -22,12 +22,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory; 
 
-public class DAVIS_Selenium_Register_Sucess_page {
+public class RegisterSucessPage {
 
     protected  WebDriver driver;
     protected UserDto userInfo;
 
-    public DAVIS_Selenium_Register_Sucess_page(WebDriver driver) {
+    public RegisterSucessPage(WebDriver driver) {
         this.driver = driver; 
         PageFactory.initElements(driver, this);
     }

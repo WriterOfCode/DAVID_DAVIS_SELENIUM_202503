@@ -4,17 +4,15 @@ package DAVIS_Selenium_Week6_TestNg_App;
 
 import Base.DAVIS_BaseTestNG;
 import Core.UserDto;
-import Pages.DAVIS_Selenium_Newtours_login_page;
+import Pages.NewtoursLoginPage;
 import Pages.DAVIS_Selenium_Newtours_page;
-import Pages.DAVIS_Selenium_Register_Sucess_page;
-import Pages.DAVIS_Selenium_Register_page;
+import Pages.RegisterSucessPage;
+import Pages.RegisterPage;
 import Utils.ElementUtils; 
 import static org.testng.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-
 import org.openqa.selenium.By; 
 import org.testng.annotations.Test;
 
@@ -64,9 +62,9 @@ public class DAVIS_Selenium_TestNg_App extends DAVIS_BaseTestNG{
  
 	 @Test(dataProvider = "UsersFromJsonFile", description ="Validate Register Page")
 	public void validateRegisterPage(UserDto UserInfo){ 
-	    DAVIS_Selenium_Register_page register_page = new DAVIS_Selenium_Register_page(webdriver);   
-	    DAVIS_Selenium_Register_Sucess_page sucess_page = new DAVIS_Selenium_Register_Sucess_page(webdriver);  
-	    DAVIS_Selenium_Newtours_login_page login_page = new DAVIS_Selenium_Newtours_login_page(webdriver);
+	    RegisterPage register_page = new RegisterPage(webdriver);   
+	    RegisterSucessPage sucess_page = new RegisterSucessPage(webdriver);  
+	    NewtoursLoginPage login_page = new NewtoursLoginPage(webdriver);
 	    
  
 	    // -----------------------------

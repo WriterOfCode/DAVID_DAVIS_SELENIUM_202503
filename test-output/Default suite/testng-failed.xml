@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App">
+      <class name="App2.DAVIS_Selenium_Final_TestNG_App">
         <methods>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
           <include name="setUp"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
+          <include name="validateRegisterPage"/>
           <include name="tearDown"/>
-          <include name="validateRegisterPage" invocation-numbers="1"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- DAVIS_Selenium_Week6_TestNg_App.DAVIS_Selenium_TestNg_App -->
+      </class> <!-- App2.DAVIS_Selenium_Final_TestNG_App -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

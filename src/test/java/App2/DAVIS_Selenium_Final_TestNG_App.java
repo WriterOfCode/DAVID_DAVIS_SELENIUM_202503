@@ -14,10 +14,10 @@ import org.testng.annotations.*;
 
 import Base.DAVIS_BaseTestNG;
 import Core.UserDto;
-import Pages.DAVIS_Selenium_Newtours_login_page;
+import Pages.NewtoursLoginPage;
 import Pages.DAVIS_Selenium_Newtours_page;
-import Pages.DAVIS_Selenium_Register_Sucess_page;
-import Pages.DAVIS_Selenium_Register_page;
+import Pages.RegisterSucessPage;
+import Pages.RegisterPage;
 import Utils.ElementUtils;
 
 
@@ -56,9 +56,9 @@ public class DAVIS_Selenium_Final_TestNG_App extends DAVIS_BaseTestNG {
  
     @Test(description ="Validate Register Page")
     public void validateRegisterPage(){ 
-        DAVIS_Selenium_Register_page register_page = new DAVIS_Selenium_Register_page(webdriver);   
-        DAVIS_Selenium_Register_Sucess_page sucess_page = new DAVIS_Selenium_Register_Sucess_page(webdriver);  
-        DAVIS_Selenium_Newtours_login_page login_page = new DAVIS_Selenium_Newtours_login_page(webdriver);
+        RegisterPage register_page = new RegisterPage(webdriver);   
+        RegisterSucessPage sucess_page = new RegisterSucessPage(webdriver);  
+        NewtoursLoginPage login_page = new NewtoursLoginPage(webdriver);
         
         // Define user
         UserDto userInfo = new UserDto();
