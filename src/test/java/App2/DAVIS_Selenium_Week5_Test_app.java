@@ -15,14 +15,14 @@ import org.openqa.selenium.By;
 
 import Core.UserDto;
 import Utils.ElementUtils;
-import Base.DAVIS_BaseTestJunit;
+import Base.BaseTestJunit;
 import Pages.NewtoursLoginPage;
 import Pages.NewToursTestNgPage;
 import Pages.RegisterSucessPage;
 import Pages.RegisterPage;
  
 // https://www.browserstack.com/guide/design-patterns-in-automation-framework
-public class DAVIS_Selenium_Week5_Test_app extends DAVIS_BaseTestJunit {
+public class DAVIS_Selenium_Week5_Test_app extends BaseTestJunit {
     @Test
     @Order(2)
     @DisplayName("Validate New Tours Login")

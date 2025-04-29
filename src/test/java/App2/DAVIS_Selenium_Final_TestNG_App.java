@@ -12,7 +12,7 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
-import Base.DAVIS_BaseTestNG;
+import Base.BaseTestNG;
 import Core.UserDto;
 import Pages.NewtoursLoginPage;
 import Pages.NewToursTestNgPage;
@@ -22,7 +22,7 @@ import Utils.ElementUtils;
 
 
 
-public class DAVIS_Selenium_Final_TestNG_App extends DAVIS_BaseTestNG {
+public class DAVIS_Selenium_Final_TestNG_App extends BaseTestNG {
     @Test(description ="Validate New Tours Page")
     public void validateNewToursHomeAndLogin() { 
         NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);

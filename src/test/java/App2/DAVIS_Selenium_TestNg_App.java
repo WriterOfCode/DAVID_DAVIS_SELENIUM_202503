@@ -1,8 +1,6 @@
-package DAVIS_Selenium_Week6_TestNg_App;
+package App2;
 
-
-
-import Base.DAVIS_BaseTestNG;
+import Base.BaseTestNG;
 import Core.UserDto;
 import Pages.NewtoursLoginPage;
 import Pages.NewToursTestNgPage;
@@ -28,7 +26,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
-public class DAVIS_Selenium_TestNg_App extends DAVIS_BaseTestNG{
+public class DAVIS_Selenium_TestNg_App extends BaseTestNG{
   @Test(dataProvider = "dp",description ="Validate New Tours Page")
   public void validateNewToursHomeAndLogin(Integer n, UserDto s) {
       NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);

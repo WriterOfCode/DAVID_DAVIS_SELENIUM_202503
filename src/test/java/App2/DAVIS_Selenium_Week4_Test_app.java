@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-import Base.DAVIS_BaseTestJunit;
+import Base.BaseTestJunit;
 import Pages.NewToursTestNgPage;
 import Utils.ElementUtils;
 
-public class DAVIS_Selenium_Week4_Test_app extends DAVIS_BaseTestJunit {
+public class DAVIS_Selenium_Week4_Test_app extends BaseTestJunit {
     @Test
     public void validateToursLogin() {
         // Create an instance of the GoogleHomePage

@@ -6,14 +6,12 @@
  * Updated April 16, 2025
  */
 
-package Base; 
-
+package Base;
+  
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import org.apache.commons.io.FileUtils; 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
@@ -21,27 +19,27 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-
-import Core.DAVIS_DriverFactory;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import Core.DAVIS_DriverFactory; 
 import Utils.ConfigReader;
 
-public class DAVIS_BaseTestJunit {
-    
+public class BaseTestNG {
     protected WebDriver webdriver;
     private DAVIS_DriverFactory driverFactory;
     private String screenshotPath; // Path to save screenshots
 
-    public DAVIS_BaseTestJunit() {
+    public BaseTestNG() {
         this.screenshotPath = ConfigReader.getProperty("screenshotPath"); // Path to save screenshots
     }
  
-    @BeforeEach// This annotation is used to indicate that the method should be executed before each test method in the current class.
+    @BeforeTest// This annotation is used to indicate that the method should be executed before each test method in the current class.
     public void setUp() {
         driverFactory = new DAVIS_DriverFactory();
         webdriver = driverFactory.initializeDriver(); // Initialize the WebDriver using the DriverFactory class
     }
  
-    @AfterEach
+    @AfterTest
     public void tearDown() {
         if (webdriver != null) {
             webdriver.quit();
