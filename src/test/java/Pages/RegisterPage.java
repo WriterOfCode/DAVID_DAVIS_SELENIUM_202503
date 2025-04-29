@@ -17,11 +17,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select; 
 
-public class DAVIS_Selenium_Register_page {
+public class RegisterPage {
     protected  WebDriver driver;
     protected UserDto userInfo;
 
-    public DAVIS_Selenium_Register_page(WebDriver driver ) {
+    public RegisterPage(WebDriver driver ) {
         this.driver = driver; 
         PageFactory.initElements(driver, this);
     }

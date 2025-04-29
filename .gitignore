@@ -1,1 +1,3 @@
 /target/
+*.xml
+test-output/testng-results.xml

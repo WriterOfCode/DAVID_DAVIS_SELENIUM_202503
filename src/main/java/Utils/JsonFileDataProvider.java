@@ -14,7 +14,8 @@ public class JsonFileDataProvider {
 
     @DataProvider(name="JsonListOfUsers")
     public ArrayList<UserDto> jsonreader() throws FileNotFoundException {
-        String filename = "D:\\eclipse-workspace\\DAVID_DAVIS_SELENIUM_202503\\src\\test\\resources\\users.json";
+    	
+        String filename = ConfigReader.getProperty("testusers"); // Path to save screenshots;
   
         Gson gson = new Gson();
         JsonReader reader = new JsonReader(new FileReader(filename));

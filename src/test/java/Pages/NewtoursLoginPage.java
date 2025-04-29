@@ -12,10 +12,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory; 
 
-public class DAVIS_Selenium_Newtours_login_page {
+public class NewtoursLoginPage {
     protected  WebDriver driver;
     protected UserDto userInfo;
-    public DAVIS_Selenium_Newtours_login_page(WebDriver driver) {
+    public NewtoursLoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

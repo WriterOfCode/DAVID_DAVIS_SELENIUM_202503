@@ -15,19 +15,19 @@ import org.openqa.selenium.By;
 
 import Core.UserDto;
 import Utils.ElementUtils;
-import Base.DAVIS_BaseTestJunit;
-import Pages.DAVIS_Selenium_Newtours_login_page;
-import Pages.DAVIS_Selenium_Newtours_page;
-import Pages.DAVIS_Selenium_Register_Sucess_page;
-import Pages.DAVIS_Selenium_Register_page;
+import Base.BaseTestJunit;
+import Pages.NewtoursLoginPage;
+import Pages.NewToursTestNgPage;
+import Pages.RegisterSucessPage;
+import Pages.RegisterPage;
  
 // https://www.browserstack.com/guide/design-patterns-in-automation-framework
-public class DAVIS_Selenium_Week5_Test_app extends DAVIS_BaseTestJunit {
+public class DAVIS_Selenium_Week5_Test_app extends BaseTestJunit {
     @Test
     @Order(2)
     @DisplayName("Validate New Tours Login")
     public void validateNewToursHomeAndLogin() { 
-        DAVIS_Selenium_Newtours_page page4 = new DAVIS_Selenium_Newtours_page(webdriver);
+    	NewToursTestNgPage page4 = new NewToursTestNgPage(webdriver);
 
         // Open homepage
         page4.open();
@@ -59,9 +59,9 @@ public class DAVIS_Selenium_Week5_Test_app extends DAVIS_BaseTestJunit {
     @Order(1)
     @DisplayName("Validate Registration page")
     public void validateRegisterPage(){ 
-        DAVIS_Selenium_Register_page register_page = new DAVIS_Selenium_Register_page(webdriver);   
-        DAVIS_Selenium_Register_Sucess_page sucess_page = new DAVIS_Selenium_Register_Sucess_page(webdriver);  
-        DAVIS_Selenium_Newtours_login_page login_page = new DAVIS_Selenium_Newtours_login_page(webdriver);
+        RegisterPage register_page = new RegisterPage(webdriver);   
+        RegisterSucessPage sucess_page = new RegisterSucessPage(webdriver);  
+        NewtoursLoginPage login_page = new NewtoursLoginPage(webdriver);
         
         // Define user
         UserDto userInfo = new UserDto();
