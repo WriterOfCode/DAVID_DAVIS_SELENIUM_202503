@@ -6,6 +6,7 @@ import Pages.NewtoursLoginPage;
 import Pages.NewToursTestNgPage;
 import Pages.RegisterSucessPage;
 import Pages.RegisterPage;
+import Utils.ConfigReader;
 import Utils.ElementUtils; 
 import static org.testng.Assert.assertTrue;
 
