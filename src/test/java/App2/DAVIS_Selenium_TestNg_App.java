@@ -179,7 +179,7 @@ public class DAVIS_Selenium_TestNg_App extends BaseTestNG{
   }
   @DataProvider
   public UserDto[] UsersFromJsonFile() throws FileNotFoundException {
-      String filename = "D:\\eclipse-workspace\\DAVID_DAVIS_SELENIUM_202503\\src\\test\\resources\\users.json";
+	  String filename = ConfigReader.getProperty("testusers");
       Gson gson = new Gson();
       JsonReader reader = new JsonReader(new FileReader(filename));
       UserDto[] users =  gson.fromJson(reader,  UserDto[].class);
