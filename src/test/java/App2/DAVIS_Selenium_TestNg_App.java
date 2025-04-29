@@ -119,17 +119,6 @@ public class DAVIS_Selenium_TestNg_App extends BaseTestNG{
 	    takeSchreenshot("validateRegisterPageNGTest");
 	
 	};
- 
- 
- 
- 
-  @BeforeMethod
-  public void beforeMethod() {
-  }
-
-  @AfterMethod
-  public void afterMethod() {
-  }
 
   /*
    * https://www.linkedin.com/advice/0/how-do-you-parameterize-testng-dataprovider#how-to-use-testng-dataprovider-with-excel?
@@ -187,28 +176,4 @@ public class DAVIS_Selenium_TestNg_App extends BaseTestNG{
       return users;
   }
  
-  @BeforeClass
-  public void beforeClass() {
-  }
-
-  @AfterClass
-  public void afterClass() {
-  }
-/*
-  @BeforeTest
-  public void beforeTest() {
-  }
-
-  @AfterTest
-  public void afterTest() {
-  }
-*/
-  @BeforeSuite
-  public void beforeSuite() {
-  }
-
-  @AfterSuite
-  public void afterSuite() {
-  }
-
 }
